@@ -1,6 +1,7 @@
 " https://github.com/tpope/vim-pathogen
-" https://github.com/scrooloose/nerdtree
 execute pathogen#infect()
+" https://github.com/scrooloose/nerdtree
+let g:NERDTreeDirArrows=0
 " syntax highlighting
 syntax on
 " https://github.com/john2x/flatui.vim
