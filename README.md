@@ -11,6 +11,12 @@ Then run the following commands:
     git clone git@github.com:Quinten/dotvim.git .vim
     echo "runtime vimrc" > .vimrc
 
+This repository has submodules. You still need to run:
+
+    cd .vim
+    git submodule init
+    git submodule update
+
 
 
 
