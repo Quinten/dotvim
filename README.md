@@ -1,4 +1,4 @@
-# vimdot
+# dotvim
 
 This is my (basic) vim configuration.
 The idea was taken from http://stackoverflow.com/a/18203545
