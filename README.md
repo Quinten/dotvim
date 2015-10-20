@@ -8,7 +8,7 @@ Make sure you have backed up the .vimrc file and .vim folder if it's not your ma
 Then run the following commands:
 
     cd
-    git clone git@github.com:Quinten/dotvim.git .vim
+    git clone https://github.com/Quinten/dotvim.git .vim
     echo "runtime vimrc" > .vimrc
 
 This repository has submodules. You still need to run:
