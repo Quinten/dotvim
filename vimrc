@@ -11,7 +11,7 @@ highlight Normal ctermfg=black ctermbg=white
 set nu
 "set nonu
 set ruler
-" tabs to 2 spaces
+" tabs to 4 spaces
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
