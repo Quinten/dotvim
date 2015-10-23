@@ -5,8 +5,12 @@ let g:NERDTreeDirArrows=0
 " syntax highlighting
 syntax on
 " https://github.com/john2x/flatui.vim
-colorscheme flatui
-highlight Normal ctermfg=black ctermbg=white
+" colorscheme flatui
+" highlight Normal ctermfg=black ctermbg=white
+" https://github.com/altercation/vim-colors-solarized
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 " linenumbers
 set nu
 "set nonu
