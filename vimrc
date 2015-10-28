@@ -9,7 +9,7 @@ syntax on
 " highlight Normal ctermfg=black ctermbg=white
 " https://github.com/altercation/vim-colors-solarized
 set background=dark
-" let g:solarized_termcolors=256
+let g:solarized_termcolors=256
 colorscheme solarized
 " move to next line when reaching the end of line with left and right keys
 set whichwrap+=<,>,h,l,[,]
