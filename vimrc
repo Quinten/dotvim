@@ -24,3 +24,8 @@ set shiftwidth=4
 " switch between vertical windows with shift + left and right (in normal mode)
 nnoremap <S-Right> <C-W><C-L>
 nnoremap <S-Left> <C-W><C-H>
+" an attampt to speed up vim
+set synmaxcol=128
+set ttyfast
+set ttyscroll=3
+set lazyredraw
