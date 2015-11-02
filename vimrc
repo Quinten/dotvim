@@ -25,7 +25,7 @@ set shiftwidth=4
 nnoremap <S-Right> <C-W><C-L>
 nnoremap <S-Left> <C-W><C-H>
 " an attampt to speed up vim
-set synmaxcol=128
+set synmaxcol=256
 set ttyfast
 set ttyscroll=3
 set lazyredraw
