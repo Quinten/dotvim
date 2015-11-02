@@ -29,3 +29,5 @@ set synmaxcol=256
 set ttyfast
 set ttyscroll=3
 set lazyredraw
+" map :nt to :NERDTree
+:command NT NERDTree
