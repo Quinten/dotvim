@@ -10,3 +10,9 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "bundle/vim-actionscript"]
+	path = bundle/vim-actionscript
+	url = git@github.com:jeroenbourgois/vim-actionscript.git
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
