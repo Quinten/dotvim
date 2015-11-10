@@ -2,6 +2,9 @@
 execute pathogen#infect()
 " https://github.com/scrooloose/nerdtree
 let g:NERDTreeDirArrows=0
+" https://github.com/bling/vim-airline
+set laststatus=2
+let g:airline_powerline_fonts=1
 " syntax highlighting
 syntax on
 " https://github.com/john2x/flatui.vim
