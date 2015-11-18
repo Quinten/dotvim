@@ -24,9 +24,9 @@ set ruler
 set expandtab
 set tabstop=4
 set shiftwidth=4
-" switch between vertical windows with shift + left and right (in normal mode)
-nnoremap <S-Right> <C-W><C-L>
-nnoremap <S-Left> <C-W><C-H>
+" switch between windows with shift + left arrow and shift + right arrow (in normal mode)
+nnoremap <S-Right> <C-W><C-W>
+nnoremap <S-Left> <C-W>W
 " an attampt to speed up vim
 set synmaxcol=256
 set ttyfast
