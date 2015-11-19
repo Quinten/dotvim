@@ -37,3 +37,5 @@ set nocursorcolumn
 set nocursorline
 " map :nt to :NERDTree
 :command NT NERDTree
+" some vimdiff settings (ignore whitespace, vertical split)
+set diffopt=filler,iwhite,vertical
