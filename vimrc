@@ -39,3 +39,6 @@ set nocursorline
 :command NT NERDTree
 " some vimdiff settings (ignore whitespace, vertical split)
 set diffopt=filler,iwhite,vertical
+" map :RW to :%s/\s\+$//
+" this removes all whitespace from the end of the lines
+:command RW :%s/\s\+$//
