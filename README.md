@@ -3,7 +3,7 @@
 This is my (basic) vim configuration.
 
 To install on a new machine:
-Make sure you have backed up the .vimrc file and .vim folder if it's not your machine.
+Make sure you have backed up the .vimrc file and .vim folder, because these will be overridden.
 Then run the following commands:
 
     cd
