@@ -4,7 +4,8 @@ execute pathogen#infect()
 let g:NERDTreeDirArrows=0
 " https://github.com/bling/vim-airline
 set laststatus=2
-let g:airline_powerline_fonts=1
+" in case you have powerline fonts from https://github.com/powerline/fonts
+"let g:airline_powerline_fonts=1
 " syntax highlighting
 syntax on
 " https://github.com/john2x/flatui.vim
@@ -12,6 +13,7 @@ syntax on
 " highlight Normal ctermfg=black ctermbg=white
 " https://github.com/altercation/vim-colors-solarized
 set background=dark
+" uncomment the following line in case of https://github.com/tomislav/osx-terminal.app-colors-solarized
 let g:solarized_termcolors=256
 colorscheme solarized
 " move to next line when reaching the end of line with left and right keys
