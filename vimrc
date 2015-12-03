@@ -13,7 +13,7 @@ syntax on
 " highlight Normal ctermfg=black ctermbg=white
 " https://github.com/altercation/vim-colors-solarized
 set background=dark
-" uncomment the following line in case of https://github.com/tomislav/osx-terminal.app-colors-solarized
+" comment out the following line in case of https://github.com/tomislav/osx-terminal.app-colors-solarized
 let g:solarized_termcolors=256
 colorscheme solarized
 " move to next line when reaching the end of line with left and right keys
