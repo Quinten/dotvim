@@ -14,7 +14,7 @@ syntax on
 " https://github.com/altercation/vim-colors-solarized
 set background=dark
 " uncomment the following line in case of https://github.com/tomislav/osx-terminal.app-colors-solarized
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 colorscheme solarized
 " move to next line when reaching the end of line with left and right keys
 set whichwrap+=<,>,h,l,[,]
