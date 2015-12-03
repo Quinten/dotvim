@@ -29,6 +29,9 @@ set shiftwidth=4
 " switch between windows with shift + left arrow and shift + right arrow (in normal mode)
 nnoremap <S-Right> <C-W><C-W>
 nnoremap <S-Left> <C-W>W
+" cycle between tabs with tab-key (forward) and shift + tab-key (backward) (in normal mode)
+nmap <tab> :tabnext<CR>
+nmap <S-tab> :tabprevious<CR>
 " an attampt to speed up vim
 set synmaxcol=256
 set ttyfast
