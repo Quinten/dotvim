@@ -47,3 +47,7 @@ set diffopt=filler,iwhite,vertical
 " map :RW to :%s/\s\+$//
 " this removes all whitespace from the end of the lines
 :command RW :%s/\s\+$//
+" visual selection split shortcuts
+" https://github.com/wellle/visual-split.vim
+command! -range VS <line1>,<line2>VSSplit
+command! -range VR <line1>,<line2>VSResize
