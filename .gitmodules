@@ -25,3 +25,6 @@
 [submodule "bundle/visual-split.vim"]
 	path = bundle/visual-split.vim
 	url = git://github.com/wellle/visual-split.vim.git
+[submodule "bundle/tmuxline.vim"]
+	path = bundle/tmuxline.vim
+	url = git@github.com:edkolev/tmuxline.vim.git
