@@ -40,6 +40,8 @@ set lazyredraw
 " more attempts to speed up vim
 set nocursorcolumn
 set nocursorline
+" show long lines completly (handy for clunky svg's)
+set display+=lastline
 " map :nt to :NERDTree
 :command NT NERDTree
 " some vimdiff settings (ignore whitespace, vertical split)
