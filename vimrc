@@ -5,7 +5,9 @@ let g:NERDTreeDirArrows=0
 " https://github.com/bling/vim-airline
 set laststatus=2
 " in case you have powerline fonts from https://github.com/powerline/fonts
-"let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
+" airline also the tabs
+let g:airline#extensions#tabline#enabled = 1
 " syntax highlighting
 syntax on
 " https://github.com/john2x/flatui.vim
@@ -14,7 +16,7 @@ syntax on
 " https://github.com/altercation/vim-colors-solarized
 set background=dark
 " comment out the following line in case of https://github.com/tomislav/osx-terminal.app-colors-solarized
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
 colorscheme solarized
 " move to next line when reaching the end of line with left and right keys
 set whichwrap+=<,>,h,l,[,]
