@@ -53,3 +53,7 @@ set diffopt=filler,iwhite,vertical
 " https://github.com/wellle/visual-split.vim
 command! -range VS <line1>,<line2>VSSplit
 command! -range VR <line1>,<line2>VSResize
+" fileformat stuff
+set fileformats=unix,dos
+set encoding=utf-8
+set fileencodings=utf-8,ucs-bom,cp1250,iso-8859-1
