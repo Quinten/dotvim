@@ -59,3 +59,5 @@ command! -range VR <line1>,<line2>VSResize
 set fileformats=unix,dos
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,cp1250,iso-8859-1
+" avoid problems with backspace in vim 7.4
+set backspace=2
