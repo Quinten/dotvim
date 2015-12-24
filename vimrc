@@ -8,6 +8,8 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 " airline also the tabs
 let g:airline#extensions#tabline#enabled = 1
+" we do the tmuxline manually (see https://github.com/Quinten/dottmux)
+let g:airline#extensions#tmuxline#enabled = 0
 " syntax highlighting
 syntax on
 " https://github.com/john2x/flatui.vim
