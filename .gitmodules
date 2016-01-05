@@ -31,3 +31,6 @@
 [submodule "bundle/vdebug"]
 	path = bundle/vdebug
 	url = git@github.com:joonty/vdebug.git
+[submodule "bundle/vim-sauce"]
+	path = bundle/vim-sauce
+	url = git@github.com:joonty/vim-sauce.git
