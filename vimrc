@@ -57,6 +57,23 @@ set diffopt=filler,iwhite,vertical
 :command CF :%y*
 " shortcut for opening a sourced shell
 :command SH :!bash -l
+" find the word under the cursor in the current file
+command FCF :execute 'vimgrep /'.expand('<cword>').'/gj '.expand('%') | copen
+" find the word under the cursor in the current working directory
+command FCD :execute 'vimgrep /'.expand('<cword>').'/gj **' | copen
+" find the word from the system clipboard in the current file
+command FSF :execute 'vimgrep /'.escape(@*, '/').'/gj '.expand('%') | copen
+" find the word from the system clipboard in the current working directory
+command FSD :execute 'vimgrep /'.escape(@*, '/').'/gj **' | copen
+" find the word from default register in the current file
+command FYF :execute 'vimgrep /'.escape(@", '/').'/gj '.expand('%') | copen
+" find the word from the default register in the current working directory
+command FYD :execute 'vimgrep /'.escape(@", '/').'/gj **' | copen
+" find by argument -> :FFF needle ./path/to/dir/**
+function! s:FindByArguments(fword, fdir)
+    :execute 'vimgrep /'.a:fword.'/gj '.a:fdir | copen
+endfunction
+command -nargs=* FFF call s:FindByArguments(<f-args>)
 " visual selection split shortcuts
 " https://github.com/wellle/visual-split.vim
 command! -range VS <line1>,<line2>VSSplit
