@@ -55,6 +55,8 @@ set diffopt=filler,iwhite,vertical
 :command RW :%s/\s\+$//
 " command to copy all lines to system clipboard
 :command CF :%y*
+" shortcut for opening a sourced shell
+:command SH :!bash -l
 " visual selection split shortcuts
 " https://github.com/wellle/visual-split.vim
 command! -range VS <line1>,<line2>VSSplit
