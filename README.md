@@ -18,6 +18,8 @@ This repository has submodules. You still need to run:
 
 The idea to structure my vim configuration like this was taken from http://stackoverflow.com/a/18203545
 
+Similar to this repo i also have created https://github.com/Quinten/dottmux for my tmux configuration.
+
 
 
 
