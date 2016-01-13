@@ -74,6 +74,16 @@ function! s:FindByArguments(fword, fdir)
     :execute 'vimgrep /'.a:fword.'/gj '.a:fdir | copen
 endfunction
 command -nargs=* FFF call s:FindByArguments(<f-args>)
+" find files by filename and populate the quickfix list -> :FF filename
+function s:FindFilesBy(filename)
+  let errorfile = tempname()
+  execute '!find . -name "'.a:filename.'" | xargs file | sed "s/:/:1:/" > '.errorfile
+  set errorformat=%f:%l:%m
+  exe "cfile ". errorfile
+  copen
+  call delete(errorfile)
+endfunction
+command! -nargs=1 FF call s:FindFilesBy(<f-args>)
 " visual selection split shortcuts
 " https://github.com/wellle/visual-split.vim
 command! -range VS <line1>,<line2>VSSplit
