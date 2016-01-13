@@ -26,6 +26,10 @@ set whichwrap+=<,>,h,l,[,]
 set nu
 "set nonu
 set ruler
+" filetype
+filetype on
+filetype plugin on
+filetype indent on
 " tabs to 4 spaces
 set expandtab
 set tabstop=4
