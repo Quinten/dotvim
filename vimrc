@@ -82,7 +82,7 @@ set shiftwidth=4
 :set iskeyword+=\-
 
 " autcompletion for css
-autocmd FileType css,sass,less set omnifunc=csscomplete#CompleteCSS
+autocmd FileType css,scss,less set omnifunc=csscomplete#CompleteCSS
 
 " File and window navigation
 " __________________________
