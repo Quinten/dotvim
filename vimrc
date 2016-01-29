@@ -75,6 +75,11 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+" Auto-completion
+" _______________
+
+" Consider hyphens '-' when completing words
+:set iskeyword+=\-
 
 " File and window navigation
 " __________________________
