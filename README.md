@@ -2,11 +2,9 @@
 
 This is my vim configuration.
 
-
-
 ## Custom commands
 
-### Custom plugin shortcuts
+### Shortcut for NERDTree
 
 ```
     :NT
@@ -16,7 +14,7 @@ Open NERDTree file explorer.
 
 See also https://github.com/scrooloose/nerdtree
 
-
+### Shortcuts for visual split
 
 ```
     <line1>,<line2>VS
@@ -40,11 +38,13 @@ If you want to resize an existing horizontal split use `VR`.
 
 See also https://github.com/wellle/visual-split.vim
 
-
-
 ## Installation
 
 ### Optional terminal settings
+
+For the correct solarized theme terminal colors on OS X i use https://github.com/tomislav/osx-terminal.app-colors-solarized
+
+As terminal font that can render some fancy triangles i use a font from https://github.com/powerline/fonts 
 
 ### Install with git
 
