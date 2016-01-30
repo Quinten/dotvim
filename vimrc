@@ -81,9 +81,6 @@ set shiftwidth=4
 " Consider hyphens '-' when completing words
 :set iskeyword+=\-
 
-" autcompletion for css
-autocmd FileType css,scss,less set omnifunc=csscomplete#CompleteCSS
-
 " File and window navigation
 " __________________________
 
