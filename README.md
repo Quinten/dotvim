@@ -46,21 +46,35 @@ For the correct solarized theme terminal colors on OS X i use https://github.com
 
 As terminal font that can render some fancy triangles i use a font from https://github.com/powerline/fonts 
 
+### Install latest vim
+
+It is completly optional, but if you are using OS X you can install the latest vim with homebrew. 
+
+```
+    brew install vim
+```
+
+(I did this beacuase it gives me acces to the `*` register, which is the system clipboard. The vim that ships with OS X doesn't have this.)
+
 ### Install with git
 
-To install on a new machine:
+To install this configuration on a new machine:
 Make sure you have backed up the .vimrc file and .vim folder, because these will be overridden.
 Then run the following commands:
 
+```
     cd
-    git clone https://github.com/Quinten/dotvim.git .vim
+    git clone git@github.com:Quinten/dotvim.git .vim
     echo "runtime vimrc" > .vimrc
+```
 
 This repository has submodules. You still need to run:
 
+```
     cd .vim
     git submodule init
     git submodule update
+```
 
 The idea to structure my vim configuration like this was taken from http://stackoverflow.com/a/18203545
 
