@@ -2,7 +2,15 @@
 
 This is my vim configuration.
 
-## Custom commands
+## Window navigation
+
+In normal mode:
+ 
+- `Shift + arrow-left` and `Shift + arrow-right` cycle focus between splits (back and forth).
+- `Tab-key` cycle forward through open tabs
+- `Shift + Tab-key` cycle backwards through open tabs
+
+## Custom commands for plugins
 
 ### Shortcut for NERDTree
 
