@@ -5,10 +5,44 @@ This is my vim configuration.
 ## Window navigation
 
 In normal mode:
- 
+
 - `Shift + arrow-left` and `Shift + arrow-right` cycle focus between splits (back and forth).
 - `Tab-key` cycle forward through open tabs
 - `Shift + Tab-key` cycle backwards through open tabs
+
+## Text manipulation
+
+```
+    :RW
+```
+
+Remove all trailing whitespace from the end of all lines in a file.
+
+```
+    :EH
+```
+
+Escape HTML. Accepts a range or visual selection. Defaults to the current line.
+
+```
+    :UH
+```
+
+Unescape HTML. Accepts a range or visual selection. Defaults to the current line.
+
+## Handy system commands
+
+```
+    :CF
+```
+
+Copies the whole file to the system clipboard.
+
+```
+    :SH
+```
+
+Open a shell with current user logged in. (Type `exit` to return to vim)
 
 ## Custom commands for plugins
 
@@ -52,11 +86,11 @@ See also https://github.com/wellle/visual-split.vim
 
 For the correct solarized theme terminal colors on OS X i use https://github.com/tomislav/osx-terminal.app-colors-solarized
 
-As terminal font that can render some fancy triangles i use a font from https://github.com/powerline/fonts 
+As terminal font that can render some fancy triangles i use a font from https://github.com/powerline/fonts
 
 ### Install latest vim
 
-It is completly optional, but if you are using OS X you can install the latest vim with homebrew. 
+It is completly optional, but if you are using OS X you can install the latest vim with homebrew.
 
 ```
     brew install vim
@@ -87,7 +121,3 @@ This repository has submodules. You still need to run:
 The idea to structure my vim configuration like this was taken from http://stackoverflow.com/a/18203545
 
 Similar to this repo i also have created https://github.com/Quinten/dottmux for my tmux configuration.
-
-
-
-
