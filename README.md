@@ -44,6 +44,58 @@ Copies the whole file to the system clipboard.
 
 Open a shell with current user logged in. (Type `exit` to return to vim)
 
+## Finding words/patterns in files
+
+All commands open the results in a quickfix window. Moving to a line and hitting enter opens the file and places the cursor at the result.
+
+```
+    :FCF
+```
+
+Find the word under the cursor in the current file.
+
+```
+    :FCD
+```
+
+Find the word under the cursor in the current working directory.
+
+```
+    :FSF
+```
+
+Find the word from the system clipboard in the current file.
+
+```
+    :FSD
+```
+
+Find the word from the system clipboard in the current working directory.
+
+```
+    :FYF
+```
+
+Find the word in the default register in the current file.
+
+```
+    :FYD
+```
+
+Find the word in the default register in the current working directory.
+
+```
+    :FFF needle ./path/to/dir/**
+```
+
+Find with arguments. `**` the double asteriks is for recursive directory traversing.
+
+```
+    :FF filename
+```
+
+Find files by filename. Searches through the current working directory.
+
 ## Custom commands for plugins
 
 ### Shortcut for NERDTree
