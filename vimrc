@@ -104,6 +104,10 @@ set diffopt=filler,iwhite,vertical
 " avoid problems with backspace in vim 7.4
 set backspace=2
 
+" map control-a and control-e to go to the beginning and end of the line respectivly
+inoremap <C-e> <C-o>$
+inoremap <C-a> <C-o>0
+
 
 " Settings for performance
 " ________________________
