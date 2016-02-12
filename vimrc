@@ -29,8 +29,8 @@ let g:airline#extensions#tmuxline#enabled = 0
 
 " visual selection split shortcuts
 " https://github.com/wellle/visual-split.vim
-command! -range VS <line1>,<line2>VSSplit
-command! -range VR <line1>,<line2>VSResize
+command! -range VS <line2>,<line2>VSSplit
+command! -range VR <line2>,<line2>VSResize
 
 
 " Syntax highlighting
@@ -108,6 +108,9 @@ set backspace=2
 inoremap <C-e> <C-o>$
 inoremap <C-a> <C-o>0
 
+" map tab in visual mode to indenting
+vnoremap <tab> >
+vnoremap <S-tab> <
 
 " Settings for performance
 " ________________________
