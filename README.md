@@ -10,6 +10,11 @@ In normal mode:
 - `Tab-key` cycle forward through open tabs
 - `Shift + Tab-key` cycle backwards through open tabs
 
+In insert mode:
+
+- `Control + a` moves to the beginning of a line.
+- `Control + e` moves to the end of a line.
+
 ## Text manipulation
 
 ```
