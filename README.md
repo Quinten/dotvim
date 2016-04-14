@@ -153,7 +153,9 @@ It is completly optional, but if you are using OS X you can install the latest v
     brew install vim
 ```
 
-(I did this beacuase it gives me acces to the `*` register, which is the system clipboard. The vim that ships with OS X doesn't have this.)
+I did this beacuase it gives me acces to the `*` register, which is the system clipboard. The vim that ships with OS X doesn't have this.
+
+More info about installing vim with homebrew can be found at http://stackoverflow.com/questions/21694327/installing-vim-with-homebrew
 
 ### Install with git
 
