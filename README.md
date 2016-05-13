@@ -96,6 +96,12 @@ Find the word in the default register in the current working directory.
 Find with arguments. `**` the double asteriks is for recursive directory traversing.
 
 ```
+    :FFF expression\ with\ spaces ./path/to/dir/**
+```
+
+To search for expressions with spaces, you can escape the spaces.
+
+```
     :FF filename
 ```
 
