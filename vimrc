@@ -37,8 +37,8 @@ command! -range VR <line2>,<line2>VSResize
 " ___________________
 
 syntax on
-" limit to first 256 chars in line for performance
-set synmaxcol=256
+" limit to first 1024 chars in line for performance
+set synmaxcol=1024
 
 " for black on white terminals
 " https://github.com/john2x/flatui.vim
