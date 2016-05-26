@@ -75,6 +75,26 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 
+" Don't mangle formatting when pasting in insert mode (osx terminal)
+" http://stackoverflow.com/a/7053522/4458135
+if &term =~ "xterm.*"
+    let &t_ti = &t_ti . "\e[?2004h"
+    let &t_te = "\e[?2004l" . &t_te
+    function XTermPasteBegin(ret)
+        set pastetoggle=<Esc>[201~
+        set paste
+        return a:ret
+    endfunction
+    map <expr> <Esc>[200~ XTermPasteBegin("i")
+    imap <expr> <Esc>[200~ XTermPasteBegin("")
+    vmap <expr> <Esc>[200~ XTermPasteBegin("c")
+    cmap <Esc>[200~ <nop>
+    cmap <Esc>[201~ <nop>
+endif
+
+" When pasting from the register with ctrl-r also do not mangle the indent
+imap <C-R> <C-R><C-O>
+
 " Auto-completion
 " _______________
 
