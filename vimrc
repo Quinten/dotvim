@@ -32,6 +32,10 @@ let g:airline#extensions#tmuxline#enabled = 0
 command! -range VS <line2>,<line2>VSSplit
 command! -range VR <line2>,<line2>VSResize
 
+" Reload file when changed on disk
+" ________________________________
+
+set autoread
 
 " Syntax highlighting
 " ___________________
