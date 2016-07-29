@@ -36,6 +36,7 @@ command! -range VR <line2>,<line2>VSResize
 " ________________________________
 
 set autoread
+"au CursorHold * checktime
 
 " Syntax highlighting
 " ___________________
