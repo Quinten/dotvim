@@ -109,13 +109,19 @@ Find files by filename. Searches through the current working directory.
 
 ## Custom commands for plugins
 
-### Shortcut for NERDTree
+### Shortcuts for NERDTree
 
 ```
     :NT
 ```
 
 Open NERDTree file explorer.
+
+```
+    :NTF
+```
+
+Aka :NERDTreeFind -> Reveal current file in NERDTree.
 
 See also https://github.com/scrooloose/nerdtree
 

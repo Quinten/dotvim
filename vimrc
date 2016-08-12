@@ -26,6 +26,8 @@ let g:airline#extensions#tmuxline#enabled = 0
 
 " map :NT to :NERDTree
 :command NT NERDTree
+" map :NTF to :NERDTreeFind
+:command NTF NERDTreeFind
 
 " visual selection split shortcuts
 " https://github.com/wellle/visual-split.vim
