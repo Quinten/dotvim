@@ -8,6 +8,9 @@
 " https://github.com/tpope/vim-pathogen
 execute pathogen#infect()
 
+" generate help for plugins
+call pathogen#helptags()
+
 " https://github.com/scrooloose/nerdtree
 let g:NERDTreeDirArrows=0
 
