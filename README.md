@@ -149,6 +149,10 @@ If you want to resize an existing horizontal split use `VR`.
 
 See also https://github.com/wellle/visual-split.vim
 
+## Other usefull vim things not specific for this configuration
+
+- `Control-w gf` opens the filepath that is under the cursor in a new tab
+
 ## Installation
 
 ### Optional terminal settings
