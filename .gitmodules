@@ -43,3 +43,6 @@
 [submodule "bundle/vim-tmux-focus-events"]
 	path = bundle/vim-tmux-focus-events
 	url = git://github.com/tmux-plugins/vim-tmux-focus-events.git
+[submodule "bundle/vim-airline-themes"]
+	path = bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
