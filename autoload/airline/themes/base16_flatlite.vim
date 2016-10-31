@@ -58,6 +58,13 @@ let s:IA2   = [ s:gui07, s:gui0F, s:cterm07, s:cterm0F ]
 let s:IA3   = [ s:gui0F, s:gui07, s:cterm0F, s:cterm07 ]
 let g:airline#themes#base16_flatlite#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
 
+" warnings
+let s:WI = [ s:gui01, s:gui07, s:cterm01, s:cterm07 ]
+let g:airline#themes#base16_flatlite#palette.normal.airline_warning = [ s:WI[0], s:WI[1], s:WI[2], s:WI[3] ]
+let g:airline#themes#base16_flatlite#palette.insert.airline_warning = g:airline#themes#base16_flatlite#palette.normal.airline_warning
+let g:airline#themes#base16_flatlite#palette.replace.airline_warning = g:airline#themes#base16_flatlite#palette.normal.airline_warning
+let g:airline#themes#base16_flatlite#palette.visual.airline_warning = g:airline#themes#base16_flatlite#palette.normal.airline_warning
+
 " Here we define the color map for ctrlp.  We check for the g:loaded_ctrlp
 " variable so that related functionality is loaded if the user is using
 " ctrlp. Note that this is optional, and if you do not define ctrlp colors
