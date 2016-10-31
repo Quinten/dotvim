@@ -48,8 +48,8 @@ let s:R2   = [ s:gui06, s:gui02, s:cterm06, s:cterm02 ]
 let s:R3   = [ s:gui09, s:gui01, s:cterm09, s:cterm01 ]
 let g:airline#themes#base16_flatlite#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
 
-let s:V1   = [ s:gui08, s:gui0B, s:cterm08, s:cterm0B ]
-let s:V2   = [ s:gui0B, s:gui08, s:cterm0B, s:cterm08 ]
+let s:V1   = [ s:gui08, s:gui03, s:cterm08, s:cterm03 ]
+let s:V2   = [ s:gui03, s:gui08, s:cterm03, s:cterm08 ]
 let s:V3   = [ s:gui0F, s:gui07, s:cterm0F, s:cterm07 ]
 let g:airline#themes#base16_flatlite#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 

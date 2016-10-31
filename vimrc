@@ -58,9 +58,9 @@ set synmaxcol=1024
 highlight Normal ctermfg=8 ctermbg=15
 highlight LineNr ctermfg=2 ctermbg=7
 highlight Comment ctermfg=7
-highlight Visual ctermfg=0 ctermbg=11
+highlight Visual ctermfg=0 ctermbg=3
 highlight VertSplit ctermfg=7 ctermbg=15
-highlight CursorLine ctermfg=8 ctermbg=11 cterm=NONE
+highlight CursorLine ctermfg=8 ctermbg=3 cterm=NONE
 
 
 " for white on black terminals
