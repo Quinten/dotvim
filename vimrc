@@ -61,6 +61,8 @@ highlight Comment ctermfg=7
 highlight Visual ctermfg=0 ctermbg=3
 highlight VertSplit ctermfg=7 ctermbg=15
 highlight CursorLine ctermfg=8 ctermbg=3 cterm=NONE
+highlight Pmenu ctermfg=0 ctermbg=7
+highlight PmenuSel ctermfg=0 ctermbg=3 cterm=BOLD
 
 
 " for white on black terminals
