@@ -56,7 +56,7 @@ set synmaxcol=1024
 " colorscheme flatui
 " highlight Normal ctermfg=black ctermbg=white
 highlight Normal ctermfg=8 ctermbg=15
-highlight LineNr ctermfg=2 ctermbg=7
+highlight LineNr ctermfg=15 ctermbg=7
 highlight Comment ctermfg=7
 highlight Visual ctermfg=0 ctermbg=3
 highlight VertSplit ctermfg=7 ctermbg=15

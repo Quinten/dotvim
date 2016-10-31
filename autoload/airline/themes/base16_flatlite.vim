@@ -2,7 +2,7 @@ let g:airline#themes#base16_flatlite#palette = {}
 let s:gui00 = "#2C3E50"
 let s:gui01 = "#C0392B"
 let s:gui02 = "#27AE60"
-let s:gui03 = "#F1C40F"
+let s:gui03 = "#F39C12"
 let s:gui04 = "#747C84"
 let s:gui05 = "#8E44AD"
 let s:gui06 = "#16A085"
@@ -10,7 +10,7 @@ let s:gui07 = "#BDC3C7"
 let s:gui08 = "#34495E"
 let s:gui09 = "#E74C3C"
 let s:gui0A = "#2ECC71"
-let s:gui0B = "#F39C12"
+let s:gui0B = "#F1C40F"
 let s:gui0C = "#3498DB"
 let s:gui0D = "#9B59B6"
 let s:gui0E = "#1ABC9C"
@@ -33,13 +33,13 @@ let s:cterm0D = 13
 let s:cterm0E = 14
 let s:cterm0F = 15
 
-let s:N1   = [ s:gui07, s:gui02, s:cterm07, s:cterm02 ]
-let s:N2   = [ s:gui0F, s:gui0A, s:cterm0F, s:cterm0A ]
+let s:N1   = [ s:gui0F, s:gui0A, s:cterm0F, s:cterm0A ]
+let s:N2   = [ s:gui07, s:gui02, s:cterm07, s:cterm02 ]
 let s:N3   = [ s:gui0F, s:gui07, s:cterm0F, s:cterm07 ]
 let g:airline#themes#base16_flatlite#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
 
-let s:I1   = [ s:gui07, s:gui05, s:cterm07, s:cterm05 ]
-let s:I2   = [ s:gui0F, s:gui0D, s:cterm0F, s:cterm0D ]
+let s:I1   = [ s:gui0F, s:gui04, s:cterm0F, s:cterm04 ]
+let s:I2   = [ s:gui07, s:gui0C, s:cterm07, s:cterm0C ]
 let s:I3   = [ s:gui0F, s:gui07, s:cterm0F, s:cterm07 ]
 let g:airline#themes#base16_flatlite#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
 
@@ -54,8 +54,8 @@ let s:V3   = [ s:gui0F, s:gui07, s:cterm0F, s:cterm07 ]
 let g:airline#themes#base16_flatlite#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
 
 let s:IA1   = [ s:gui0F, s:gui07, s:cterm0F, s:cterm07 ]
-let s:IA2   = [ s:gui0F, s:gui07, s:cterm0F, s:cterm07 ]
-let s:IA3   = [ s:gui0F, s:gui04, s:cterm0F, s:cterm04 ]
+let s:IA2   = [ s:gui07, s:gui0F, s:cterm07, s:cterm0F ]
+let s:IA3   = [ s:gui0F, s:gui07, s:cterm0F, s:cterm07 ]
 let g:airline#themes#base16_flatlite#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
 
 " Here we define the color map for ctrlp.  We check for the g:loaded_ctrlp
