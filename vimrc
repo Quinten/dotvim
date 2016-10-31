@@ -64,6 +64,10 @@ highlight CursorLine ctermfg=8 ctermbg=3 cterm=NONE
 highlight Pmenu ctermfg=0 ctermbg=7
 highlight PmenuSel ctermfg=0 ctermbg=3 cterm=BOLD
 
+highlight DiffAdd ctermfg=15 ctermbg=10
+highlight DiffChange ctermfg=1 ctermbg=7
+highlight DiffDelete ctermfg=15 ctermbg=9
+highlight DiffText ctermfg=15 ctermbg=9
 
 " for white on black terminals
 " https://github.com/altercation/vim-colors-solarized
