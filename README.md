@@ -157,7 +157,9 @@ See also https://github.com/wellle/visual-split.vim
 
 ### Optional terminal settings
 
-For the correct solarized theme terminal colors on OS X i use https://github.com/tomislav/osx-terminal.app-colors-solarized
+~~For the correct solarized theme terminal colors on OS X i use https://github.com/tomislav/osx-terminal.app-colors-solarized~~
+
+For my osx terminal color profile i use https://github.com/Quinten/flatlite-osx-terminal-profile
 
 As terminal font that can render some fancy triangles i use a font from https://github.com/powerline/fonts
 
