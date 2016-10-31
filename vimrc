@@ -23,6 +23,7 @@ let g:airline#extensions#tabline#enabled = 1
 " we do the tmuxline manually (see https://github.com/Quinten/dottmux)
 let g:airline#extensions#tmuxline#enabled = 0
 
+let g:airline_theme='base16_flatlite'
 
 " Custom plugin shortcuts
 " _______________________
@@ -54,13 +55,20 @@ set synmaxcol=1024
 " https://github.com/john2x/flatui.vim
 " colorscheme flatui
 " highlight Normal ctermfg=black ctermbg=white
+highlight Normal ctermfg=8 ctermbg=15
+highlight LineNr ctermfg=2 ctermbg=7
+highlight Comment ctermfg=7
+highlight Visual ctermfg=0 ctermbg=11
+highlight VertSplit ctermfg=7 ctermbg=15
+highlight CursorLine ctermfg=8 ctermbg=11 cterm=NONE
+
 
 " for white on black terminals
 " https://github.com/altercation/vim-colors-solarized
-set background=dark
+" set background=dark
 " comment out the following line in case of https://github.com/tomislav/osx-terminal.app-colors-solarized
 " let g:solarized_termcolors=256
-colorscheme solarized
+" colorscheme solarized
 
 
 " Various visual clues
