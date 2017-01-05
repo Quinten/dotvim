@@ -278,5 +278,14 @@ command! -range EH call HtmlEntities(<line1>, <line2>, 1)
 command! -range UH call HtmlEntities(<line1>, <line2>, 0)
 
 
+" Beautifier
+" __________
+" https://github.com/maksimr/vim-jsbeautify
 
-
+" maps control-f
+map <C-f> :call JsBeautify()<cr>
+autocmd FileType javascript noremap <buffer> <C-f> :call JsBeautify()<cr>
+autocmd FileType json noremap <buffer> <C-f> :call JsonBeautify()<cr>
+autocmd FileType jsx noremap <buffer> <C-f> :call JsxBeautify()<cr>
+autocmd FileType html noremap <buffer> <C-f> :call HtmlBeautify()<cr>
+autocmd FileType css noremap <buffer> <C-f> :call CSSBeautify()<cr>
