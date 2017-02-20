@@ -237,7 +237,7 @@ command FYD :execute 'vimgrep /'.escape(@", '/').'/gj **' | copen
 function! s:FindByArguments(fword, fdir)
     :execute 'vimgrep /'.a:fword.'/gj '.a:fdir | copen
 endfunction
-command -nargs=* FFF call s:FindByArguments(<f-args>)
+command -nargs=* -complete=file FFF call s:FindByArguments(<f-args>)
 
 " find files by filename and populate the quickfix list -> :FF filename
 function s:FindFilesBy(filename)
