@@ -212,6 +212,8 @@ set fileencodings=utf-8,ucs-bom,cp1250,iso-8859-1
 " shortcut for opening a sourced shell
 :command SH :!bash -l
 
+" shortcut for opening a new tab
+:command -nargs=? -complete=file T tabedit <args>
 
 " Search commands
 " _______________
