@@ -66,6 +66,15 @@ set synmaxcol=1024
 " lite colorscheme to work with https://github.com/Quinten/flatlite-osx-terminal-profile
 colorscheme flatlite
 
+" http://vimcasts.org/episodes/creating-colorschemes-for-vim/
+" Show syntax highlighting groups for word under cursor on control-k
+nmap <C-K> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+    if !exists("*synstack")
+        return
+    endif
+     echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
 
 " Various visual clues
 " ____________________
