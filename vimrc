@@ -55,15 +55,15 @@ set synmaxcol=1024
 " https://github.com/john2x/flatui.vim
 " colorscheme flatui
 " highlight Normal ctermfg=black ctermbg=white
-highlight Normal ctermfg=8 ctermbg=15
-highlight Visual ctermfg=0 ctermbg=3
+highlight Normal ctermfg=7 ctermbg=8
+highlight Visual ctermfg=15 ctermbg=13
 
-highlight LineNr ctermfg=15 ctermbg=7
-highlight VertSplit ctermfg=7 ctermbg=15
+highlight LineNr ctermfg=5 ctermbg=0
+highlight VertSplit ctermfg=0 ctermbg=5
 highlight CursorLine ctermfg=8 ctermbg=3 cterm=NONE
 
-highlight Pmenu ctermfg=0 ctermbg=7
-highlight PmenuSel ctermfg=0 ctermbg=3 cterm=BOLD
+highlight Pmenu ctermfg=0 ctermbg=13
+highlight PmenuSel ctermfg=0 ctermbg=5 cterm=BOLD
 
 highlight DiffAdd ctermfg=15 ctermbg=10
 highlight DiffChange ctermfg=1 ctermbg=7
