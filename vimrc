@@ -182,6 +182,10 @@ set fileencodings=utf-8,ucs-bom,cp1250,iso-8859-1
 " this removes all whitespace from the end of the lines
 :command RW :%s/\s\+$//
 
+" map :RV to :%s/?v[0-9]*//g
+" this removes patterns like '?v20170309'
+:command RV :%s/?v[0-9]*//g
+
 " command to copy all lines to system clipboard
 :command CF :%y*
 
