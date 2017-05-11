@@ -303,6 +303,11 @@ if (argc() == 0)
     au VimLeave * :call MakeSession()
 endif
 
+" Close other buffers
+" ___________________
+
+:command CO :%bd|e#
+
 
 
 
