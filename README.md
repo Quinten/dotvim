@@ -152,6 +152,7 @@ See also https://github.com/wellle/visual-split.vim
 ## Other usefull vim things not specific for this configuration
 
 - `Control-w gf` opens the filepath that is under the cursor in a new tab
+- `:%bd` closes all buffers
 
 ## Installation
 
