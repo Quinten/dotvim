@@ -118,6 +118,9 @@ endif
 " When pasting from the register with ctrl-r also do not mangle the indent
 imap <C-R> <C-R><C-O>
 
+" Shortcut for pasting and keeping the register
+vmap <C-P> pgvy
+
 " Auto-completion
 " _______________
 
