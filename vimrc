@@ -48,8 +48,8 @@ set autoread
 " ___________________
 
 syntax on
-" limit to first 1024 chars in line for performance
-set synmaxcol=1024
+" limit to first 4096 chars in line for performance
+set synmaxcol=4096
 
 " for black on white terminals
 " https://github.com/john2x/flatui.vim
