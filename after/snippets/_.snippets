@@ -9,3 +9,14 @@ snippet colm
 		<div class="colm1-2">
 		</div>
 	</div>
+snippet lesslink
+	.lib-link(
+		@_link-color: ${1:@primary-color},
+		@_link-text-decoration: ${2:none},
+		@_link-color-visited: $1,
+		@_link-text-decoration-visited: $2,
+		@_link-color-hover: ${3:@primary__color},
+		@_link-text-decoration-hover: ${4:none},
+		@_link-color-active: $3,
+		@_link-text-decoration-active: $4
+	);
