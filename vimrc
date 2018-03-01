@@ -38,6 +38,9 @@ let g:airline_theme='base16_flatlite'
 command! -range VS <line2>,<line2>VSSplit
 command! -range VR <line2>,<line2>VSResize
 
+" Open snippets file
+:command Snip :tabedit ~/.vim/after/snippets/_.snippets
+
 " Reload file when changed on disk
 " ________________________________
 
