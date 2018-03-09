@@ -37,9 +37,6 @@
 [submodule "bundle/jshint.vim"]
 	path = bundle/jshint.vim
 	url = git@github.com:walm/jshint.vim.git
-[submodule "bundle/vim-jira-complete"]
-	path = bundle/vim-jira-complete
-	url = git://github.com/mnpk/vim-jira-complete.git
 [submodule "bundle/vim-tmux-focus-events"]
 	path = bundle/vim-tmux-focus-events
 	url = git://github.com/tmux-plugins/vim-tmux-focus-events.git
