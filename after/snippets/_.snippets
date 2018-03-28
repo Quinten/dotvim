@@ -80,3 +80,18 @@ snippet xmlpagelayout
 	</page>
 snippet xmlrmblock
 	<referenceBlock name="${1}" remove="true" />
+snippet xmladdtemplate
+	<referenceContainer name="${1}">
+		<block class="Magento\Framework\View\Element\Template" name="${2}" template="${3}" />
+	</referenceContainer>
+snippet jsmagentojquerywidget
+	define(["jquery"], function($){
+		"use strict";
+		var ${1} = {
+			init: function(config, element) {
+			}
+		};
+		return {
+			${2}: ${3}.init
+		};
+	});
