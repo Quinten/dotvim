@@ -98,3 +98,17 @@ snippet jsmagentojquerywidget
 			${2}: ${3}.init
 		};
 	});
+snippet jscomponentmixin
+	define(function () {
+		'use strict';
+
+		var mixin = {
+			${1}: function () {
+				return this._super();
+			}
+		};
+
+		return function (target) {
+			return target.extend(mixin);
+		};
+	});
