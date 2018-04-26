@@ -91,6 +91,12 @@ snippet xmladdtemplate
 snippet xmlcontainer
 	<container name="${1}" htmlTag="div" htmlClass="${2}" after="-">
 	</container>
+snippet phpstaticblock
+	<?php if ($sb = $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('${1}')->toHtml()) { ?>
+		<?php echo $sb; ?>
+	<?php } else { ?>
+		<p>Alt content</p>
+	<?php } ?>
 snippet jsmagentojquerywidget
 	define(["jquery"], function($){
 		"use strict";
