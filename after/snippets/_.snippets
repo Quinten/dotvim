@@ -116,3 +116,13 @@ snippet jscomponentmixin
 			return target.extend(mixin);
 		};
 	});
+snippet jsrequiremixin
+	var config = {
+		config: {
+			mixins: {
+				'Vendor1_Module/js/file': {
+				'Vender2_Module/js/mixin/file': true
+				}
+			}
+		}
+	};
