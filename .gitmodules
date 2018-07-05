@@ -65,3 +65,6 @@
 	path = bundle/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
 
+[submodule "bundle/vim-twig"]
+	path = bundle/vim-twig
+	url = git@github.com:lumiliet/vim-twig.git
