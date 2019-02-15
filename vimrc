@@ -23,7 +23,8 @@ let g:airline#extensions#tabline#enabled = 1
 " we do the tmuxline manually (see https://github.com/Quinten/dottmux)
 let g:airline#extensions#tmuxline#enabled = 0
 
-let g:airline_theme='base16_flatlite'
+"let g:airline_theme='base16_flatlite'
+"let g:airline_theme='solarized'
 
 " Custom plugin shortcuts
 " _______________________
@@ -61,13 +62,13 @@ set synmaxcol=4096
 
 " for white on black terminals
 " https://github.com/altercation/vim-colors-solarized
-" set background=dark
+set background=dark
 " comment out the following line in case of https://github.com/tomislav/osx-terminal.app-colors-solarized
-" let g:solarized_termcolors=256
-" colorscheme solarized
+"let g:solarized_termcolors=256
+colorscheme solarized
 
 " lite colorscheme to work with https://github.com/Quinten/flatlite-osx-terminal-profile
-colorscheme flatlite
+"colorscheme flatlite
 
 " http://vimcasts.org/episodes/creating-colorschemes-for-vim/
 " Show syntax highlighting groups for word under cursor on control-k
