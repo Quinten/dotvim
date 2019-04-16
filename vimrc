@@ -101,6 +101,8 @@ filetype indent on
 set expandtab
 set tabstop=4
 set shiftwidth=4
+" 2 spaces for json
+autocmd FileType json setlocal shiftwidth=2 tabstop=2
 
 " Don't mangle formatting when pasting in insert mode (osx terminal)
 " http://stackoverflow.com/a/7053522/4458135
@@ -205,6 +207,14 @@ set wrap linebreak nolist
 
 " shortcut for opening a new tab
 :command -nargs=? -complete=file T tabedit <args>
+
+" csscomb on the current file
+:command Comb :%!csscomb
+
+" when opening certain files do certain stuff
+" au BufReadPost,BufNewFile *.scss silent! Comb
+au BufReadPost,BufNewFile *.scss,*.less,*.css,*.js,*.php,*.html,*.phtml,*.svg,*.xml silent! RW
+au BufReadPost,BufNewFile *.scss,*.less,*.css,*.js,*.php,*.html,*.phtml,*.svg,*.xml silent! retab
 
 " Search commands
 " _______________
