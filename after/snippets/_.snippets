@@ -132,3 +132,19 @@ snippet jsrequiremixin
 			}
 		}
 	};
+snippet jscomponent
+	define([
+		'uiComponent', 'ko'
+	], function(Component, ko) {
+		"use strict";
+
+		return Component.extend({
+			defaults: {
+				template: 'Vendor_Module/file',
+			},
+			initialize: function () {
+				this.someVar = ko.observable('');
+				this._super();
+			}
+		});
+	});
