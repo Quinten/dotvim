@@ -42,6 +42,10 @@ command! -range VR <line2>,<line2>VSResize
 " Open snippets file
 :command Snip :tabedit ~/.vim/after/snippets/_.snippets
 
+" Follow symlinks
+command! FollowSymLink execute "file " . resolve(expand("%")) | edit
+au BufReadPost ./pub/static/* silent! FollowSymLink
+
 " Reload file when changed on disk
 " ________________________________
 
