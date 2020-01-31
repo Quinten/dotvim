@@ -49,6 +49,8 @@ command! -range VR <line2>,<line2>VSResize
 ":map <Leader>nn :tabedit ~/Sites/dev-log/index.md<CR>
 
 :command Notes tabedit ~/Sites/dev-log
+:command Music tabedit ~/Sites/chuckies
+:command Pruts tabedit ~/Sites/pruts
 
 " Follow symlinks
 command! FollowSymLink execute "file " . resolve(expand("%")) | edit
@@ -72,12 +74,17 @@ set synmaxcol=4096
 " colorscheme flatui
 " highlight Normal ctermfg=black ctermbg=white
 
+"highlight Normal ctermfg=white ctermbg=black
+
 " for white on black terminals
 " https://github.com/altercation/vim-colors-solarized
 set background=dark
 " comment out the following line in case of https://github.com/tomislav/osx-terminal.app-colors-solarized
-"let g:solarized_termcolors=256
+let g:solarized_termcolors=16
+let g:solarized_termtrans=1
 colorscheme solarized
+
+"highlight Normal ctermfg=white ctermbg=black
 
 " lite colorscheme to work with https://github.com/Quinten/flatlite-osx-terminal-profile
 "colorscheme flatlite
