@@ -349,5 +349,8 @@ endif
 :command CO :%bd|e#
 
 
+" write log message
+" _________________
+:command QM !cd ~/Sites/dev-log && printf '\nwhat happens on f stays on f\n' >> README.md && git add . && git commit && cd -
 
 
