@@ -165,6 +165,7 @@ nnoremap <S-Left> <C-W>W
 " cycle between tabs with tab-key (forward) and shift + tab-key (backward) (in normal mode)
 nmap <tab> :tabnext<CR>
 nmap <S-tab> :tabprevious<CR>
+map <C-W>t :tabnext<CR>
 
 " show long lines completly (handy for clunky svg's)
 set display+=lastline
