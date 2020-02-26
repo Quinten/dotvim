@@ -22,9 +22,6 @@
 [submodule "bundle/tmuxline.vim"]
 	path = bundle/tmuxline.vim
 	url = git@github.com:edkolev/tmuxline.vim.git
-[submodule "bundle/vim-sauce"]
-	path = bundle/vim-sauce
-	url = git@github.com:joonty/vim-sauce.git
 [submodule "bundle/jshint.vim"]
 	path = bundle/jshint.vim
 	url = git@github.com:walm/jshint.vim.git
