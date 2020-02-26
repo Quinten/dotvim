@@ -34,23 +34,10 @@ let g:airline#extensions#tmuxline#enabled = 0
 " map :NTF to :NERDTreeFind
 :command NTF NERDTreeFind
 
-" visual selection split shortcuts
-" https://github.com/wellle/visual-split.vim
-command! -range VS <line2>,<line2>VSSplit
-command! -range VR <line2>,<line2>VSResize
-
 " Open snippets file
 :command Snip :tabedit ~/.vim/after/snippets/_.snippets
 
-" leader
-":let mapleader = ","
-
-" dev-log
-":map <Leader>nn :tabedit ~/Sites/dev-log/index.md<CR>
-
 :command Notes tabedit ~/Sites/dev-log
-:command Music tabedit ~/Sites/chuckies
-:command Pruts tabedit ~/Sites/pruts
 
 " Follow symlinks
 command! FollowSymLink execute "file " . resolve(expand("%")) | edit
@@ -165,7 +152,9 @@ nnoremap <S-Left> <C-W>W
 " cycle between tabs with tab-key (forward) and shift + tab-key (backward) (in normal mode)
 nmap <tab> :tabnext<CR>
 nmap <S-tab> :tabprevious<CR>
-map <C-W>t :tabnext<CR>
+
+" switch tabs from terminal
+tnoremap <C-W><tab> <C-W>:tabnext<CR>
 
 " show long lines completly (handy for clunky svg's)
 set display+=lastline
