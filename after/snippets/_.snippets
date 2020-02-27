@@ -97,15 +97,31 @@ snippet phpstaticblock
 	<?php } else { ?>
 		<p>Alt content</p>
 	<?php } ?>
-snippet jsmagentojquerywidget
-	define(["jquery"], function($){
-		"use strict";
+snippet jsjquerywidget
+	define(['jquery'], function ($) {
+		'use strict';
 		var ${1} = {
 			init: function(config, element) {
 			}
 		};
 		return {
 			${2}: ${3}.init
+		};
+	});
+snippet jsjquerywidgetmixin
+	define(['jquery'], function ($) {
+		'use strict';
+		return function (originalWidget) {
+			$.widget(
+				'mage.${1:SwatchRenderer}',
+				$['mage']['$1'],
+				{
+					${2:_RenderControls}:function () {
+						this._super();
+					}
+				}
+			);
+			return $['mage']['$1'];
 		};
 	});
 snippet jscomponentmixin

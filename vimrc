@@ -36,6 +36,8 @@ let g:airline#extensions#tmuxline#enabled = 0
 
 " Open snippets file
 :command Snip :tabedit ~/.vim/after/snippets/_.snippets
+:imap <C-J> <Plug>snipMateNextOrTrigger
+:smap <C-J> <Plug>snipMateNextOrTrigger
 
 :command Notes tabedit ~/Sites/dev-log
 
