@@ -345,4 +345,6 @@ endif
 " _________________
 :command QM !cd ~/Sites/dev-log && printf '\nwhat happens on f stays on f\n' >> README.md && git add . && git commit && cd -
 
-
+" no line numbers in terminal normal mode
+" _______________________________________
+autocmd TerminalOpen * setlocal nonu
