@@ -39,7 +39,7 @@ let g:airline#extensions#tmuxline#enabled = 0
 :imap <C-J> <Plug>snipMateNextOrTrigger
 :smap <C-J> <Plug>snipMateNextOrTrigger
 
-:command Notes tabedit ~/Sites/dev-log
+:command Notes e ~/Sites/dev-log
 
 " Follow symlinks
 command! FollowSymLink execute "file " . resolve(expand("%")) | edit
