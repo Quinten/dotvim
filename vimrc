@@ -133,10 +133,16 @@ set whichwrap+=<,>,h,l,[,]
 " switch between windows with shift + left arrow and shift + right arrow (in normal mode)
 nnoremap <S-Right> <C-W><C-W>
 nnoremap <S-Left> <C-W>W
+tnoremap <S-Right> <C-W><C-W>
+tnoremap <S-Left> <C-W>W
 
 " cycle between tabs with tab-key (forward) and shift + tab-key (backward) (in normal mode)
 nmap <tab> :tabnext<CR>
 nmap <S-tab> :tabprevious<CR>
+nmap <S-Up> :tabnext<CR>
+nmap <S-Down> :tabprevious<CR>
+tmap <S-Up> <C-W>:tabnext<CR>
+tmap <S-Down> <C-W>:tabprevious<CR>
 
 " switch tabs from terminal
 tnoremap <C-W><tab> <C-W>:tabnext<CR>
