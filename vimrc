@@ -112,6 +112,10 @@ set shiftwidth=4
 " 2 spaces for json
 autocmd FileType json setlocal shiftwidth=2 tabstop=2
 
+" F8 to disable indenting for file
+nnoremap <F8> :setl noai nocin nosi inde=<CR>
+inoremap <F8> <ESC>:setl noai nocin nosi inde=<CR>
+
 " When pasting from the register with ctrl-r also do not mangle the indent
 imap <C-R> <C-R><C-O>
 
