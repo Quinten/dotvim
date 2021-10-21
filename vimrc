@@ -40,6 +40,7 @@ let g:airline#extensions#tmuxline#enabled = 0
 :smap <C-J> <Plug>snipMateNextOrTrigger
 
 :command Notes e ~/Sites/dev-log
+:command Daily e ~/Sites/journal/daily.txt
 
 " Follow symlinks
 command! FollowSymLink execute "file " . resolve(expand("%")) | edit
@@ -191,6 +192,7 @@ set fileencodings=utf-8,ucs-bom,cp1250,iso-8859-1
 " ___________________
 
 set wrap linebreak nolist
+:let &colorcolumn=join(range(81,1024),",")
 
 " Usefull commands
 " ________________
