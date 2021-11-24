@@ -42,6 +42,9 @@ let g:airline#extensions#tmuxline#enabled = 0
 :command Notes e ~/Sites/dev-log
 :command Daily e ~/Sites/journal/daily.txt
 
+" Save Daily
+:command SD !cd ~/Sites/journal && git add . && git commit -m 'Update' && git push && cd - 
+
 " Follow symlinks
 command! FollowSymLink execute "file " . resolve(expand("%")) | edit
 au BufReadPost ./pub/static/* silent! FollowSymLink
@@ -334,7 +337,6 @@ endif
 " ___________________
 
 :command CO :%bd|e#
-
 
 " write log message
 " _________________
