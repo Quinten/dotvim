@@ -38,6 +38,7 @@ let g:airline#extensions#tmuxline#enabled = 0
 :command Snip :tabedit ~/.vim/after/snippets/_.snippets
 :imap <C-J> <Plug>snipMateNextOrTrigger
 :smap <C-J> <Plug>snipMateNextOrTrigger
+let g:snipMate = { 'snippet_version' : 1 }
 
 :command Notes e ~/Sites/dev-log
 :command Daily e ~/Sites/journal/daily.txt

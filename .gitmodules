@@ -1,33 +1,33 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
+	url = git@github.com:scrooloose/nerdtree.git
 [submodule "bundle/vim-less"]
 	path = bundle/vim-less
-	url = https://github.com/groenewege/vim-less
+	url = git@github.com:groenewege/vim-less
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
+	url = git@github.com:altercation/vim-colors-solarized.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
-	url = https://github.com/bling/vim-airline
+	url = git@github.com:bling/vim-airline
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
 [submodule "bundle/promptline.vim"]
 	path = bundle/promptline.vim
-	url = https://github.com/edkolev/promptline.vim
+	url = git@github.com:edkolev/promptline.vim
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = git@github.com:tpope/vim-fugitive.git
 [submodule "bundle/tmuxline.vim"]
 	path = bundle/tmuxline.vim
 	url = git@github.com:edkolev/tmuxline.vim.git
 [submodule "bundle/vim-tmux-focus-events"]
 	path = bundle/vim-tmux-focus-events
-	url = git://github.com/tmux-plugins/vim-tmux-focus-events.git
+	url = git@github.com:tmux-plugins/vim-tmux-focus-events.git
 [submodule "bundle/vim-airline-themes"]
 	path = bundle/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes
 [submodule "bundle/vim-jsbeautify"]
 	path = bundle/vim-jsbeautify
 	url = git@github.com:maksimr/vim-jsbeautify.git
@@ -39,16 +39,16 @@
 	url = git@github.com:jistr/vim-nerdtree-tabs.git
 [submodule "bundle/vim-vue"]
 	path = bundle/vim-vue
-	url = https://github.com/posva/vim-vue.git
+	url = git@github.com:posva/vim-vue.git
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
-	url = https://github.com/tomtom/tlib_vim.git
+	url = git@github.com:tomtom/tlib_vim.git
 [submodule "bundle/vim-addon-mw-utils"]
 	path = bundle/vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+	url = git@github.com:MarcWeber/vim-addon-mw-utils.git
 [submodule "bundle/vim-snipmate"]
 	path = bundle/vim-snipmate
-	url = https://github.com/garbas/vim-snipmate.git
+	url = git@github.com:garbas/vim-snipmate.git
 
 [submodule "bundle/vim-twig"]
 	path = bundle/vim-twig
