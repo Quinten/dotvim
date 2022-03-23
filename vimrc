@@ -44,7 +44,7 @@ let g:snipMate = { 'snippet_version' : 1 }
 :command Daily e ~/Documents/journal/daily.txt
 
 " Save Daily
-:command SD !cd ~/Documents/journal && git add . && git commit -m 'Update' && git push && cd - 
+:command SD !cd ~/Documents/journal && git add . && git commit -m 'Update' && git push && cd -
 
 " Follow symlinks
 "command! FollowSymLink execute "file " . resolve(expand("%")) | edit
@@ -140,21 +140,21 @@ vmap <C-P> pgvy
 set whichwrap+=<,>,h,l,[,]
 
 " switch between windows with shift + left arrow and shift + right arrow (in normal mode)
-nnoremap <S-Right> <C-W><C-W>
-nnoremap <S-Left> <C-W>W
-tnoremap <S-Right> <C-W><C-W>
-tnoremap <S-Left> <C-W>W
+" nnoremap <S-Right> <C-W><C-W>
+" nnoremap <S-Left> <C-W>W
+" tnoremap <S-Right> <C-W><C-W>
+" tnoremap <S-Left> <C-W>W
 
 " cycle between tabs with tab-key (forward) and shift + tab-key (backward) (in normal mode)
-nmap <tab> :tabnext<CR>
-nmap <S-tab> :tabprevious<CR>
-nmap <S-Up> :tabnext<CR>
-nmap <S-Down> :tabprevious<CR>
-tmap <S-Up> <C-W>:tabnext<CR>
-tmap <S-Down> <C-W>:tabprevious<CR>
+" nmap <tab> :tabnext<CR>
+" nmap <S-tab> :tabprevious<CR>
+" nmap <S-Up> :tabnext<CR>
+" nmap <S-Down> :tabprevious<CR>
+" tmap <S-Up> <C-W>:tabnext<CR>
+" tmap <S-Down> <C-W>:tabprevious<CR>
 
 " switch tabs from terminal
-tnoremap <C-W><tab> <C-W>:tabnext<CR>
+" tnoremap <C-W><tab> <C-W>:tabnext<CR>
 
 " show long lines completly (handy for clunky svg's)
 set display+=lastline
@@ -166,12 +166,12 @@ set diffopt=filler,iwhite,vertical
 set backspace=2
 
 " map control-a and control-e to go to the beginning and end of the line respectivly
-inoremap <C-e> <C-o>$
-inoremap <C-a> <C-o>0
+" inoremap <C-e> <C-o>$
+" inoremap <C-a> <C-o>0
 
 " map tab in visual mode to indenting
-vnoremap <tab> >
-vnoremap <S-tab> <
+" vnoremap <tab> >
+" vnoremap <S-tab> <
 
 " Settings for performance
 " ________________________
@@ -230,25 +230,25 @@ au BufReadPost,BufNewFile *.scss,*.less,*.css,*.js,*.php,*.html,*.phtml,*.svg,*.
 " _______________
 
 " find the word under the cursor in the current file
-command FCF :execute 'vimgrep /'.expand('<cword>').'/gj '.expand('%') | copen
+" command FCF :execute 'vimgrep /'.expand('<cword>').'/gj '.expand('%') | copen
 " find the word under the cursor in the current working directory
-command FCD :execute 'vimgrep /'.expand('<cword>').'/gj **' | copen
+" command FCD :execute 'vimgrep /'.expand('<cword>').'/gj **' | copen
 
 " find the word from the system clipboard in the current file
-command FSF :execute 'vimgrep /'.escape(@*, '/').'/gj '.expand('%') | copen
+" command FSF :execute 'vimgrep /'.escape(@*, '/').'/gj '.expand('%') | copen
 " find the word from the system clipboard in the current working directory
-command FSD :execute 'vimgrep /'.escape(@*, '/').'/gj **' | copen
+" command FSD :execute 'vimgrep /'.escape(@*, '/').'/gj **' | copen
 
 " find the word from default register in the current file
-command FYF :execute 'vimgrep /'.escape(@", '/').'/gj '.expand('%') | copen
+" command FYF :execute 'vimgrep /'.escape(@", '/').'/gj '.expand('%') | copen
 " find the word from the default register in the current working directory
-command FYD :execute 'vimgrep /'.escape(@", '/').'/gj **' | copen
+" command FYD :execute 'vimgrep /'.escape(@", '/').'/gj **' | copen
 
 " find by argument -> :FFF needle ./path/to/dir/**
-function! s:FindByArguments(fword, fdir)
-    :execute 'vimgrep /'.a:fword.'/gj '.a:fdir | copen
-endfunction
-command -nargs=* -complete=file FFF call s:FindByArguments(<f-args>)
+" function! s:FindByArguments(fword, fdir)
+"     :execute 'vimgrep /'.a:fword.'/gj '.a:fdir | copen
+" endfunction
+" command -nargs=* -complete=file FFF call s:FindByArguments(<f-args>)
 
 " find files by filename and populate the quickfix list -> :FF filename
 function s:FindFilesBy(filename)
