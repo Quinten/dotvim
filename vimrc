@@ -40,15 +40,15 @@ let g:airline#extensions#tmuxline#enabled = 0
 :smap <C-J> <Plug>snipMateNextOrTrigger
 let g:snipMate = { 'snippet_version' : 1 }
 
-:command Notes e ~/Sites/dev-log
-:command Daily e ~/Sites/journal/daily.txt
+" :command Notes e ~/Sites/dev-log
+:command Daily e ~/Documents/journal/daily.txt
 
 " Save Daily
-:command SD !cd ~/Sites/journal && git add . && git commit -m 'Update' && git push && cd - 
+:command SD !cd ~/Documents/journal && git add . && git commit -m 'Update' && git push && cd - 
 
 " Follow symlinks
-command! FollowSymLink execute "file " . resolve(expand("%")) | edit
-au BufReadPost ./pub/static/* silent! FollowSymLink
+"command! FollowSymLink execute "file " . resolve(expand("%")) | edit
+"au BufReadPost ./pub/static/* silent! FollowSymLink
 
 " Reload file when changed on disk
 " ________________________________
@@ -341,7 +341,7 @@ endif
 
 " write log message
 " _________________
-:command QM !cd ~/Sites/dev-log && printf '\nwhat happens on f stays on f\n' >> README.md && git add . && git commit && cd -
+":command QM !cd ~/Sites/dev-log && printf '\nwhat happens on f stays on f\n' >> README.md && git add . && git commit && cd -
 
 " no line numbers in terminal normal mode
 " _______________________________________
