@@ -214,7 +214,7 @@ set wrap linebreak nolist
 :command SH :!bash -l
 
 " shortcut for opening a new tab
-:command -nargs=? -complete=file T tabedit <args>
+" :command -nargs=? -complete=file T tabedit <args>
 
 " csscomb on the current file
 :command Comb :%!csscomb
