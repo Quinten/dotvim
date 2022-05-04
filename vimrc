@@ -20,8 +20,6 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 " airline also the tabs
 let g:airline#extensions#tabline#enabled = 1
-" we do the tmuxline manually (see https://github.com/Quinten/dottmux)
-let g:airline#extensions#tmuxline#enabled = 0
 
 "let g:airline_theme='base16_flatlite'
 "let g:airline_theme='solarized'
