@@ -37,9 +37,6 @@
 [submodule "bundle/vim-nerdtree-tabs"]
 	path = bundle/vim-nerdtree-tabs
 	url = git@github.com:jistr/vim-nerdtree-tabs.git
-[submodule "bundle/vim-vue"]
-	path = bundle/vim-vue
-	url = git@github.com:posva/vim-vue.git
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
 	url = git@github.com:tomtom/tlib_vim.git
