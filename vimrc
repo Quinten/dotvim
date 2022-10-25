@@ -154,6 +154,9 @@ set whichwrap+=<,>,h,l,[,]
 " switch tabs from terminal
 " tnoremap <C-W><tab> <C-W>:tabnext<CR>
 
+" set height of terminal to 24 (not to high but we can still play rogue)
+" set termwinsize=24x0
+
 " show long lines completly (handy for clunky svg's)
 set display+=lastline
 
@@ -194,7 +197,7 @@ set fileencodings=utf-8,ucs-bom,cp1250,iso-8859-1
 " ___________________
 
 set wrap linebreak nolist
-:let &colorcolumn=join(range(81,1024),",")
+:let &colorcolumn=join(range(101,1024),",")
 
 " Usefull commands
 " ________________
