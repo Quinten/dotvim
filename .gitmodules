@@ -41,3 +41,6 @@
 	path = bundle/vim-snipmate
 	url = git@github.com:garbas/vim-snipmate.git
 
+[submodule "bundle/copilot.vim"]
+	path = bundle/copilot.vim
+	url = git@github.com:github/copilot.vim.git
