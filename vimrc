@@ -39,10 +39,10 @@ let g:airline#extensions#tabline#enabled = 1
 let g:snipMate = { 'snippet_version' : 1 }
 
 " :command Notes e ~/Sites/dev-log
-:command Daily e ~/Documents/journal/daily.txt
+:command Daily e ~/Documents/projects/journal/daily.txt
 
 " Save Daily
-:command SD !cd ~/Documents/journal && git add . && git commit -m 'Update' && git push && cd -
+:command SD !cd ~/Documents/projects/journal && git add . && git commit -m 'Update' && git push && cd -
 
 " Follow symlinks
 "command! FollowSymLink execute "file " . resolve(expand("%")) | edit
