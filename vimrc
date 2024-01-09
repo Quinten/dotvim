@@ -331,7 +331,7 @@ endfunction
 " Adding automatons for when entering or leaving Vim
 if (argc() == 0)
     au VimEnter * nested :call LoadSession()
-    au VimLeave * :call NERDTreeTabsClose()
+    au VimLeave * NERDTreeClose
     au VimLeave * :call MakeSession()
 endif
 
