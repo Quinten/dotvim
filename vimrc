@@ -309,7 +309,8 @@ autocmd FileType css noremap <buffer> <C-f> :call CSSBeautify()<cr>
 " _______
 
 function! MakeSession()
-  let b:sessiondir = $HOME . "/.vim/sessions" . getcwd()
+  "let b:sessiondir = $HOME . "/.vim/sessions" . getcwd()
+  let b:sessiondir = $HOME . "/.vim/sessions"
   if (filewritable(b:sessiondir) != 2)
     exe 'silent !mkdir -p ' b:sessiondir
     redraw!
@@ -319,7 +320,8 @@ function! MakeSession()
 endfunction
 
 function! LoadSession()
-  let b:sessiondir = $HOME . "/.vim/sessions" . getcwd()
+  "let b:sessiondir = $HOME . "/.vim/sessions" . getcwd()
+  let b:sessiondir = $HOME . "/.vim/sessions"
   let b:sessionfile = b:sessiondir . "/session.vim"
   if (filereadable(b:sessionfile))
     exe 'source ' b:sessionfile
@@ -331,7 +333,7 @@ endfunction
 " Adding automatons for when entering or leaving Vim
 if (argc() == 0)
     au VimEnter * nested :call LoadSession()
-    au VimLeave * NERDTreeClose
+    au VimLeave * NERDTreeTabsClose
     au VimLeave * :call MakeSession()
 endif
 
