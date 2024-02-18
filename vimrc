@@ -17,7 +17,8 @@ let g:NERDTreeDirArrows=0
 " https://github.com/bling/vim-airline
 set laststatus=2
 " in case you have powerline fonts from https://github.com/powerline/fonts
-let g:airline_powerline_fonts=1
+" let g:airline_powerline_fonts=1
+let g:airline_symbols_ascii = 1
 " airline also the tabs
 let g:airline#extensions#tabline#enabled = 1
 
@@ -72,9 +73,9 @@ set synmaxcol=4096
 " https://github.com/altercation/vim-colors-solarized
 set background=dark
 " comment out the following line in case of https://github.com/tomislav/osx-terminal.app-colors-solarized
-let g:solarized_termcolors=16
-let g:solarized_termtrans=1
-colorscheme solarized
+" let g:solarized_termcolors=16
+" let g:solarized_termtrans=1
+" colorscheme solarized
 
 "highlight Normal ctermfg=white ctermbg=black
 
