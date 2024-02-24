@@ -1,6 +1,8 @@
 # dotvim
 
-This is my vim configuration.
+This is my old vim configuration. This is just here for reference.
+
+I am experimenting with a new vim and dotfiles setup for the moment, which i started from scratch. The idea is to have 2 different repos. One for the propietary shell stuff for the companies I work for. Which i will keep private. And one for the personal goodies. I hope to release this one day with decent documentation.
 
 ## Window navigation
 
